@@ -1,0 +1,23 @@
+{
+  "name": "market-txt-parser",
+  "version": "1.0.0",
+  "description": "Market Text File Parser",
+  "main": "parse.markets.js",
+  "dependencies": {
+    "chalk": "^1.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matt-Webb/market-txt-parser.git"
+  },
+  "author": "'Matthew",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Matt-Webb/market-txt-parser/issues"
+  },
+  "homepage": "https://github.com/Matt-Webb/market-txt-parser#readme"
+}
