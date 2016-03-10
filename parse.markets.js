@@ -1,8 +1,6 @@
 'use strict';
 
-/**
- * Module dependencies.
- */
+// module dependencies.
 var fs = require('fs'),
     chalk = require('chalk');
 
@@ -76,19 +74,17 @@ for (var i = 0; i < linesArray.length; i++) {
     }
 
     // log out final process
-    if(i === linesArray.length - 1){
-
-        console.log('finished processing markets.\t\t\t');
-    }
-
+    if(i === linesArray.length - 1)
+        console.log(chalk.green('Finished processing markets.'));
 }
 
 var stream = fs.createWriteStream('./markets-transposed.txt');
 
 stream.once('open', function(f) {
 
-    console.log('number of markets processed \t\t\t', Markets.length);
-    console.log('writing markegts to new file \t\t\t');
+    console.log(chalk.green('Number of markets processed \t'), Markets.length);
+    console.log('--');
+    console.log('Writing markegts to new file');
     // add data to new file
     Markets.forEach(function(m) {
             stream.write(m.ev_mkt_id + ',' + m.sort + ',' + m.ev_id + ',' + m.desc + ',' + m.start_time + '\n');
@@ -96,5 +92,5 @@ stream.once('open', function(f) {
     // close
     stream.end();
     console.log('--');
-    console.log(chalk.green('Done.\t\t\t See "markets-transposed.txt" in root'));
+    console.log(chalk.green('DONE.\t Please see "markets-transposed.txt" in root'));
 });
