@@ -1,7 +1,7 @@
 ## Market Text File Parser
 
 #### Prerequisites
-Make sure you have installed all of the following prerequisites on your development machine:
+Make sure you have installed on your machine:
 * Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager. If you encounter any problems, you can also use this [GitHub Gist](https://gist.github.com/isaacs/579814) to install Node.js.
 
 
@@ -23,8 +23,10 @@ $ node parse.markets.js markets.txt
 
 **note:** you need to pass in your markets text file as a command line argument (as shown in the example above 'markets.txt').
 
-If you wish to change the file out put name, change lines 81 of _parse.markets.js_:
+If you wish to change the file out put name, change line 81 of _parse.markets.js_:
 
 ```bash
 var outputFileName = 'markets-transposed.txt';
 ```
+##### Author
+[Matthew D Webb](http://webb.digital)
