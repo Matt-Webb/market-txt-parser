@@ -78,7 +78,8 @@ for (var i = 0; i < linesArray.length; i++) {
         console.log(chalk.green('Finished processing markets.'));
 }
 
-var stream = fs.createWriteStream('./markets-transposed.txt');
+var outputFileName = 'markets-transposed.txt';
+var stream = fs.createWriteStream('./' + outputFileName);
 
 stream.once('open', function(f) {
 
@@ -92,5 +93,5 @@ stream.once('open', function(f) {
     // close
     stream.end();
     console.log('--');
-    console.log(chalk.green('DONE.\t Please see "markets-transposed.txt" in root'));
+    console.log(chalk.green('DONE.\t Please see' + outputFileName + ' in the root of this project'));
 });
