@@ -9,7 +9,8 @@ var dataSource = process.argv[2];
 
 // error handling
 if(!dataSource) {
-    console.log(chalk.bold.red('WARNING: you need to pass your markets text file as an argument on the command line.'));
+    console.log(chalk.bold.red('WARNING: \t You need to pass your markets text file as an argument on the command line. Please try again.'));
+    console.log(chalk.yellow('Example: \t $ node parse.markets.js markets.txt'));
     process.exit(1);
     return
 }
@@ -17,7 +18,8 @@ if(!dataSource) {
 // prepare data for processing
 var text = fs.readFileSync(dataSource, 'utf8');
 var linesArray = text.split('\n');
-
+console.log('\t -------------------------------------------------------------------------');
+console.log(chalk.green('\t 1.) \t Process initiated.'));
 // store for new format
 var Markets = [];
 
@@ -76,7 +78,7 @@ for (var i = 0; i < linesArray.length; i++) {
 
     // log out final process
     if(i === linesArray.length - 1)
-        console.log(chalk.green('Finished processing markets.'));
+        console.log(chalk.green('\t 2.) \t Finished processing markets.'));
 }
 
 var outputFileName = 'markets-transposed.txt';
@@ -84,15 +86,15 @@ var stream = fs.createWriteStream('./' + outputFileName);
 
 stream.once('open', function(f) {
 
-    console.log(chalk.green('Number of markets processed \t'), Markets.length);
-    console.log('--');
-    console.log('Writing markegts to new file');
+    console.log(chalk.green('\t 3.) \t Number of markets processed |'), Markets.length);
+    console.log(chalk.green('\t 4.) \t Writing markets to new file'));
     // add data to new file
     Markets.forEach(function(m) {
             stream.write(m.ev_mkt_id + ',' + m.sort + ',' + m.ev_id + ',' + m.desc + ',' + m.start_time + '\n');
     });
     // close
     stream.end();
-    console.log('--');
-    console.log(chalk.green('DONE.\t Please see' + outputFileName + ' in the root of this project'));
+    console.log('\t -------------------------------------------------------------------------');
+    console.log(chalk.green('\t DONE.\t Please see' + outputFileName + ' in the root of this project'));
+    console.log('\t -------------------------------------------------------------------------');
 });

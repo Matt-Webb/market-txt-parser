@@ -18766,21 +18766,21 @@ start_time  2016-02-20 03:00:00
 ev_mkt_id   339138997
 sort        CS
 ev_id       8907769
-desc        |Thomaz Bellucci|/|Marcelo Demoliner| |vs| |Nicholas Monroe|/|Jack 
+desc        |Thomaz Bellucci|/|Marcelo Demoliner| |vs| |Nicholas Monroe|/|Jack
             Sock|
 start_time  2016-02-12 19:45:00
 
 ev_mkt_id   339138993
 sort        HH
 ev_id       8907769
-desc        |Thomaz Bellucci|/|Marcelo Demoliner| |vs| |Nicholas Monroe|/|Jack 
+desc        |Thomaz Bellucci|/|Marcelo Demoliner| |vs| |Nicholas Monroe|/|Jack
             Sock|
 start_time  2016-02-12 19:45:00
 
 ev_mkt_id   339139000
 sort        HH
 ev_id       8907769
-desc        |Thomaz Bellucci|/|Marcelo Demoliner| |vs| |Nicholas Monroe|/|Jack 
+desc        |Thomaz Bellucci|/|Marcelo Demoliner| |vs| |Nicholas Monroe|/|Jack
             Sock|
 start_time  2016-02-12 19:45:00
 
@@ -21255,7 +21255,7 @@ start_time  2016-02-28 13:00:00
 ev_mkt_id   341183643
 sort        OE
 ev_id       8936687
-desc        |Lara Arruabarrena|/|Paula Gonclaves| |vs| |Maria Irigoyen|/|Paula 
+desc        |Lara Arruabarrena|/|Paula Gonclaves| |vs| |Maria Irigoyen|/|Paula
             Kania|
 start_time  2016-02-26 00:30:00
 
