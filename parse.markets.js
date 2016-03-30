@@ -10,6 +10,7 @@ var dataSource = process.argv[2];
 // error handling
 if(!dataSource) {
     console.log(chalk.bold.red('WARNING: you need to pass your markets text file as an argument on the command line.'));
+    process.exit(1);
     return
 }
 
