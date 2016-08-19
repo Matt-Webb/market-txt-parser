@@ -1,5 +1,8 @@
 ## Market Text File Parser
 
+### Update
+This has been re written in ES6.
+
 #### Prerequisites
 Make sure you have installed on your machine:
 * Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager. If you encounter any problems, you can also use this [GitHub Gist](https://gist.github.com/isaacs/579814) to install Node.js.
