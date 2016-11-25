@@ -55,12 +55,13 @@ for ( let i = 0; i < linesArray.length; i++ ) {
     if ( data[ 0 ] === 'desc' ) {
         // create a string from the array elements
         let details = '';
+        TODO: switch to Array.prototype.forEach 
         for ( let x = 1; x < data.length; x++ ) {
             // remove carriage return and unrequired white space
             let info = data[ x ].replace( /\r$/, '' ).replace( / +(?= )/g, '' );
             if ( info.length > 0 )
                 details += info;
-        }
+        }        
         market.desc = details.trim();
     }
 
